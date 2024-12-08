@@ -272,8 +272,6 @@ header {
     }
 
     .livro {
-        width: 115px;
-        height: 160px;
         border: 4px outset #24252a;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
