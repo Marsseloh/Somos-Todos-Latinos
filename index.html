@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/JavaScript/script.js" defer></script>
+</head>
+
+<body onload="sort()">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <nav id="pesquisa">
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" id="search" class="input-field" placeholder="Pesquisar">
+        </div>
+    </nav>
+    <div id="container">
+        <ul class="itens">
+            <li class="item">
+                <div class="item-image">
+                    <img src="images/Deadpool.jpg" alt="">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Deadpool
+                    </h2>
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+                    <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
+                        quas
+                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
+                        odio
+                        natus nostrum eligendi fuga!
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item-image">
+                    <img src="images/fabrica.jpg" alt="">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">
+                        A Fantástica Fábrica de Chocolate
+                    </h2>
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+                    <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
+                        quas
+                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
+                        odio
+                        natus nostrum eligendi fuga!
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item-image">
+                    <img src="images/raio.jpg" alt="">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Raio Negro
+                    </h2>
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+                    <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
+                        quas
+                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
+                        odio
+                        natus nostrum eligendi fuga!
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item-image">
+                    <img src="images/up.jpg" alt="">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Up Altas Aventuras
+                    </h2>
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+                    <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
+                        quas
+                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
+                        odio
+                        natus nostrum eligendi fuga!
+                    </p>
+                </div>
+            </li>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="images/download.jpg" alt="">
+                </div>
+                <div class="item-content">
+                    <h2 class="item-title">
+                        Rambo
+                    </h2>
+                    <p class="item-subtitle">
+                        <i class="fa-solid fa-film"></i>
+                        Filme (2024)
+                    </p>
+                    <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
+                        quas
+                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
+                        odio
+                        natus nostrum eligendi fuga!
+                    </p>
+                </div>
+            </li>
+
+            <li id="no_results">
+                <p>nenhum resustado encontrado</p>
+            </li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <article>
+            <h2>Populares</h2>
+            <hr>
+            <br>
+            <section>
+
+                <ol style="list-style: none;  " class="populares" id="01">
+                    <li class="li">
+                        <figure>
+                            <img src="images/Deadpool.jpg" class="livro">
+                            <figcaption>Deadpool</figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/fabrica.jpg" class="livro">
+                            <figcaption>A Fantástica Fabrica de Chocolate</figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/raio.jpg" class="livro">
+                            <figcaption>Raio Negro</figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/up.jpg" class="livro">
+                            <figcaption>Up: ALtas Aventuras</figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/download.jpg" class="livro">
+                            <figcaption>Rambo</figcaption>
+                        </figure>
+                    </li>
+                </ol>
+        </article>
+        </section>
+    </main>
+</body>
+
+</html>
